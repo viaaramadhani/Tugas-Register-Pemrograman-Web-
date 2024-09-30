@@ -3,12 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frame Sebelum dan Sesudah</title>
+    <title>Form Registrasi Tanpa Bootstrap</title>
 </head>
-    <frameset cols="50%, 50%" border="0">
-        <frame name="halaman1" src="../Tugas2/index.html"/>
-        <frame name="halaman2" src="../form2/index.html"/>
-        </frameset> 
-    
+<body style="font-family: Arial, sans-serif; background-color: #f0f8ff; margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh;">
 
+  <div style="background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); width: 600px;">
+    <h1 style="background-color: rgb(87, 104, 157); color: white; text-align: center; padding: 10px; border-radius: 5px;">Halaman Registrasi Tanpa Bootstrap</h1>
+    
+    <form style="background-color: pink; padding: 20px; border-radius: 10px;">
+      <table style="width: 100%; border-collapse: collapse;">
+        <tbody>
+          <tr>
+            <td style="padding: 10px;"><label for="first-name" style="font-weight: bold;">Nama Depan :</label></td>
+            <td style="padding: 10px;"><input type="text" id="first-name" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;"></td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;"><label for="last-name" style="font-weight: bold;">Nama Belakang :</label></td>
+            <td style="padding: 10px;"><input type="text" id="last-name" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;"></td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;"><label for="alamat" style="font-weight: bold;">Alamat :</label></td>
+            <td style="padding: 10px;"><textarea id="alamat" cols="40" rows="5" placeholder="Nama Jalan, No. Rumah" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;"></textarea></td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;"><label for="jk" style="font-weight: bold;">Jenis Kelamin :</label></td>
+            <td style="padding: 10px;">
+              <input type="radio" name="jk" id="Laki-Laki" value="Laki-Laki" checked>
+              <label for="Laki-Laki">Laki-Laki</label>
+              <br>
+              <input type="radio" name="jk" id="Perempuan" value="Perempuan">
+              <label for="Perempuan">Perempuan</label>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;"><label for="username" style="font-weight: bold;">Username :</label></td>
+            <td style="padding: 10px;"><input type="text" id="username" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;"></td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;"><label for="password" style="font-weight: bold;">Password :</label></td>
+            <td style="padding: 10px;">
+              <input type="password" id="password" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;">
+              <br><i style="font-size: 12px;">*Password mengandung huruf kapital, huruf kecil, dan karakter spesial</i>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;"><label for="tgl-lahir" style="font-weight: bold;">Tanggal Lahir :</label></td>
+            <td style="padding: 10px;"><input type="date" id="tgl-lahir" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;"></td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;"><label for="gambar" style="font-weight: bold;">Upload Foto :</label></td>
+            <td style="padding: 10px;"><input type="file" id="gambar" style="width: 100%;"></td>
+          </tr>
+          <tr>
+            <td colspan="2" style="padding: 10px; text-align: center;">
+              <button type="submit" style="padding: 10px 20px; background-color: rgb(87, 104, 157); color: white; border: none; border-radius: 5px; cursor: pointer;">Submit</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+
+</body>
 </html>
